@@ -1,10 +1,10 @@
 #!/usr/bin/python3
-'''a function that returns a list of lists of integers representing 
+'''a function that returns a list of lists of integers representing
 the Pascal’s triangle of n'''
 
 
 def pascal_triangle(n):
-    '''A function returns a list of lists of integers representing 
+    '''A function returns a list of lists of integers representing
     the Pascal’s triangle of n'''
     Arr = []
     if type(n) is not int or n <= 0:
