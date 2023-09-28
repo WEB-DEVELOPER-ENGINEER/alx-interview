@@ -4,7 +4,11 @@ the Pascal’s triangle of n'''
 
 
 def pascal_triangle(n):
+    '''A function returns a list of lists of integers representing 
+    the Pascal’s triangle of n'''
     Arr = []
+    if type(n) is not int or n <= 0:
+        return Arr
     for i in range(n):
         row = []
         for j in range(i + 1):
