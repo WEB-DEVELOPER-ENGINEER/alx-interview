@@ -11,6 +11,7 @@ def canUnlockAll(boxes):
     val = boxes[0]
     return access(boxes, val, arr)
 
+
 def access(boxes, val, arr):
     if len(arr) == 0:
         return True
