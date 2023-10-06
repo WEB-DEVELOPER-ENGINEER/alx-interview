@@ -1,6 +1,6 @@
 # Pascal's Triangle
 
-##Project's name: 0x00. Pascal's Triangle
+## Project's name: 0x00. Pascal's Triangle
 
 ## Tasks To Complete
 
