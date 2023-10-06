@@ -1,3 +1,8 @@
+#!/usr/bin/python3
+
+from collections import deque
+
+
 def canUnlockAll(boxes):
     """Determines if all the boxes can be opened
     Args:
@@ -8,10 +13,12 @@ def canUnlockAll(boxes):
     """
     n = len(boxes)
     visited = [False] * n
-    def dfs(box):
-        visited[box] = True
-        for key in boxes[box]:
+    visited[0] = True
+    queue = deque([0])
+    while queue:
+        current_box = queue.popleft()
+        for key in boxes[current_box]:
             if not visited[key]:
-                dfs(key)
-    dfs(0)
+                visited[key] = True
+                queue.append(key)
     return all(visited)
