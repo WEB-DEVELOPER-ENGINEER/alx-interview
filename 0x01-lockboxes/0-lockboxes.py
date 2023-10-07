@@ -11,6 +11,10 @@ def canUnlockAll(boxes):
     Returns:
         bool: True if all boxes can be opened, otherwise, False
     """
+    if (type(boxes)) is not list:
+        return False
+    elif (len(boxes)) == 0:
+        return False
     arr = []
     for i in range(len(boxes)):
         arr.append(i)
