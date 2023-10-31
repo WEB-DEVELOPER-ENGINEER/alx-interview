@@ -34,6 +34,5 @@ try:
         if line_count == 10:
             print_statistics()
             line_count = 0
-except Exception:
+finally:
     print_statistics()
-    raise
