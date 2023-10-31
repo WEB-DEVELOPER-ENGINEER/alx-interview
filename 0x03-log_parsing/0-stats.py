@@ -17,7 +17,7 @@ def print_statistics():
             print(f"{code}: {count}")
 def handle_interrupt(signum, frame):
     print_statistics()
-    sys.exit(0)
+
 signal.signal(signal.SIGINT, handle_interrupt)
 try:
     for line in sys.stdin:
@@ -34,4 +34,4 @@ try:
             print_statistics()
             line_count = 0
 except:
-    pass
+    pass    
