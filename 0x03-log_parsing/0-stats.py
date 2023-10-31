@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 import re
 import sys
+import signal
 
 ip_address_pattern = r'(\b25[0-5]|\b2[0-4][0-9]|\b[01]?[0-9][0-9]?)(\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){3}'
 allowed_status_codes = (200, 301, 400, 401, 403, 404, 405, 500)
@@ -14,6 +15,10 @@ def print_statistics():
     for code, count in sorted(status_code_counts.items()):
         if count > 0:
             print(f"{code}: {count}")
+def handle_interrupt(signum, frame):
+    print_statistics()
+    sys.exit(0)
+signal.signal(signal.SIGINT, handle_interrupt)
 try:
     for line in sys.stdin:
         line = line.strip()
@@ -28,5 +33,7 @@ try:
         if line_count == 10:
             print_statistics()
             line_count = 0
+except KeyboardInterrupt:
+    pass
 finally:
     print_statistics()
