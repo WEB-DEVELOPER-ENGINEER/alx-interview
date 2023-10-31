@@ -33,7 +33,5 @@ try:
         if line_count == 10:
             print_statistics()
             line_count = 0
-except KeyboardInterrupt:
-    pass
 finally:
     print_statistics()
