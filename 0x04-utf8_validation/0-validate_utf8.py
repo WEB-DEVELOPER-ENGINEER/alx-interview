@@ -28,6 +28,8 @@ def validUTF8(data):
                         break
                     else:
                         x += 1
+                if x > 4:
+                    return False
         else:
             return False
     if x > 0:
