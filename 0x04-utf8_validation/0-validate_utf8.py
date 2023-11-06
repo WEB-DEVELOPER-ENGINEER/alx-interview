@@ -29,7 +29,7 @@ def validUTF8(data):
                     else:
                         x += 1
                 if x > 4:
-                    return False
+                    x = 0
         else:
             return False
     if x > 0:
