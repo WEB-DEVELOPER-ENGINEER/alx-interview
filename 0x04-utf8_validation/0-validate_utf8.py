@@ -31,6 +31,6 @@ def validUTF8(data):
                             x += 1
         else:
             return False
-    if x > 0:
+    if x != 0:
         return False
     return True
