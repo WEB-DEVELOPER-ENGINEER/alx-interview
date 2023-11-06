@@ -27,7 +27,8 @@ def validUTF8(data):
                     if digit == 0:
                         break
                     else:
-                        x += 1
+                        if x == 0:
+                            x += 1
                 if x > 4:
                     x = 0
         else:
