@@ -8,6 +8,8 @@ def validUTF8(data):
     """
     a method that determines if a given data set is a valid UTF-8 encoding
     """
+    if not data:
+        return False
     x = 0
     for num in data:
         if num <= 255:
