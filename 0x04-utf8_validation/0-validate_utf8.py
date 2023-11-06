@@ -19,6 +19,8 @@ def validUTF8(data):
                     if binary_repr[1] != 0:
                         return False
                     x -= 1
+                    if x == 0:
+                        x = -1
                 else:
                     return False
             if num >= 127:
@@ -27,7 +29,7 @@ def validUTF8(data):
                     if digit == 0:
                         break
                     else:
-                        if x == 0:
+                        if x == -1:
                             x += 1
                 if x > 4:
                     x = 0
