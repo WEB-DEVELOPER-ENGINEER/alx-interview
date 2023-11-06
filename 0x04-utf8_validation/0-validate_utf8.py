@@ -8,29 +8,27 @@ def validUTF8(data):
     """
     a method that determines if a given data set is a valid UTF-8 encoding
     """
-    x = 0
-    for num in data:
-        if num <= 255:
-            if x > 0:
-                binary_repr = [int(bit) for bit in bin(num)[2:]]
-                if len(binary_repr) == 8:
-                    if binary_repr[0] != 1:
-                        return False
-                    if binary_repr[1] != 0:
-                        return False
-                    x -= 1
-                else:
+    i = 0
+    while i < len(data):
+        if (data[i] & 0x80) == 0:
+            i += 1
+        elif (data[i] & 0xE0) == 0xC0:
+            i += 1
+            if i >= len(data) or (data[i] & 0xC0) != 0x80:
+                return False
+        elif (data[i] & 0xF0) == 0xE0:
+            i += 1
+            for j in range(2):
+                if i >= len(data) or (data[i] & 0xC0) != 0x80:
                     return False
-            if num >= 127:
-                binary_repr = [int(bit) for bit in bin(num)[2:]]
-                if binary_repr[0] != 1 and binary_repr[1] != 0:
-                    for digit in binary_repr:
-                        if digit == 0:
-                            break
-                        else:
-                            x += 1
+                i += 1
+        elif (data[i] & 0xF8) == 0xF0:
+            i += 1
+            for j in range(3):
+                if i >= len(data) or (data[i] & 0xC0) != 0x80:
+                    return False
+                i += 1
         else:
             return False
-    if x != 0:
-        return False
+
     return True
