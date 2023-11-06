@@ -22,14 +22,13 @@ def validUTF8(data):
                 else:
                     return False
             if num >= 127:
-                if x > 0:
-                    x -= 1
                 binary_repr = [int(bit) for bit in bin(num)[2:]]
-                for digit in binary_repr:
-                    if digit == 0:
-                        break
-                    else:
-                        x += 1
+                if binary_repr[0] != 1 and binary_repr[1] != 0:
+                    for digit in binary_repr:
+                        if digit == 0:
+                            break
+                        else:
+                            x += 1
         else:
             return False
     if x > 0:
