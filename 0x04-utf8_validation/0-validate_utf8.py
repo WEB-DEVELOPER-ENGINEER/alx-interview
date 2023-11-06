@@ -27,12 +27,8 @@ def validUTF8(data):
                     if digit == 0:
                         break
                     else:
-                        if x > 0:
-                            if binary_repr[0] == 1 and binary_repr[1] == 0:
-                                pass
-                        else:
-                            x += 1
-                if x == 1:
+                        x += 1
+                if x == 1 or x > 4:
                     x = 0
         else:
             return False
