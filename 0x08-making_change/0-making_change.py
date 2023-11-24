@@ -22,4 +22,4 @@ def makeChange(coins, total):
             count += total // coins[i]
             total %= coins[i]
         i += 1
-    return count if total == 0 else -1
+    return count if total <= 0 else -1
