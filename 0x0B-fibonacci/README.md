@@ -12,7 +12,7 @@ Performing arithmetic operations with smaller numbers is generally faster than w
 The algorithm leverages matrices to calculate very large Fibonacci numbers, optimizing the runtime to `O(n) = log(n)`.
 
 ## Development Insights
-This solution was developed by applying some rules of thumb when designing an algorithm, including:
+This solution was developed by noticing unique characteristics about this problem:
 
 ### a. Identify Problem Characteristics
-Notice characteristics about the problem to devise a better algorithm that makes use of them. In this case, recognizing the ability to use matrices to solve Fibonacci problems and the cyclic nature of the last digit every 60 terms led to an optimized solution. It's not always easy to come up with a great insight, and sometimes a 'good' algorithm is just enough. However, there are other times when more is required, and the standard procedures we follow to design an algorithm or enhance an existing one, such as introducing a data structure to speed things up, or maybe finding a greedy algorithm that solves this problem, or perhaps employing a dynamic programming approach, aren't sufficient. This is a simple example of that fact.
+Notice characteristics about the problem to devise a better algorithm that makes use of them. In this case, recognizing the ability to use matrices to solve Fibonacci problems and the cyclic nature of the last digit every 60 terms led to an optimized solution. It's not always easy to come up with a great insight and notice something idiosyncratic or peculiar, and sometimes a 'good' algorithm is just enough. However, there are other times when more is required, and the standard procedures we follow to design an algorithm or enhance an existing one, such as introducing a data structure to speed things up, or maybe finding a greedy algorithm that solves this problem, or perhaps employing a dynamic programming approach, aren't sufficient. This is a simple example of that fact.
