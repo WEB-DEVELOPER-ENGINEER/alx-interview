@@ -9,7 +9,7 @@ To prevent integer overflow, the algorithm utilizes the modulo operation. The Fi
 Performing arithmetic operations with smaller numbers is generally faster than with large numbers. The modulo operation enables the algorithm to work with smaller values, thereby improving efficiency.
 
 ## 3. Matrix Optimization
-The algorithm leverages matrices to calculate very large Fibonacci numbers, optimizing the runtime to `O(n) = log(n)`.
+The algorithm leverages matrices and exponentiation by squaring to calculate very large Fibonacci numbers, optimizing the runtime to `O(n) = log(n)`.
 
 ## Development Insights
 This solution was developed by noticing unique characteristics about this problem:
