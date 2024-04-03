@@ -18,5 +18,5 @@ ports
 3
 
 The second string can be obtained from the first one by deleting 's', substituting 'h' for 'p', and inserting 's'. This can be compactly visualized by the following alignment.
-s h o r t −
+s h o r t −<br>
 − p o r t s
