@@ -12,7 +12,7 @@ The edit distance between them.
 
 ## Sample
 ### Input:
-short
+short<br>
 ports
 ### Output:
 3
