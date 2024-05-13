@@ -28,6 +28,7 @@ pop
 max
 
 **Output:**
+
 2
 
 2
