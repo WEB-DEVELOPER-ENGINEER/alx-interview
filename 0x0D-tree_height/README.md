@@ -35,6 +35,6 @@ The input means that there are 5 nodes with numbers from 0 to 4:
 - Node 4 is a child of node 1.
 
 To visualize this, let's write the numbers of nodes from 0 to 4 in one line, and the numbers given in the input in the second line underneath:
-0 1 2 3 4
-4 -1 4 1 1
+0 1 2 3 4<br>
+4 -1 4 1 1<br>
 Now we can see that node number 1 is the root because −1 corresponds to it in the second line. Also, nodes number 3 and number 4 are children of the root node 1. Also, nodes number 0 and number 2 are children of node 4.
