@@ -22,5 +22,5 @@ Given a description of a rooted tree, the task is to compute the height of the t
 - **Sample Input:**<br>
 5<br>
 -1 0 4 0 3<br>
-**Sample Output:**<br>
+- **Sample Output:**<br>
 4
