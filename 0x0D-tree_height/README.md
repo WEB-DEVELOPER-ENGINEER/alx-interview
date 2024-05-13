@@ -11,7 +11,7 @@ Given a description of a rooted tree, the task is to compute the height of the t
    - Read the parent nodes of each node.
 
 2. **Compute the height of the tree:**
-   - Implement a depth-first search (DFS) algorithm to traverse the tree.
+   - Implement a depth-first search (DFS) algorithm to traverse the tree. DFS is often implemented using a stack data structure or recursion. But since recursion relies on the call stack, which can lead to stack overflow errors if the depth of recursion becomes too large; use an explicit stack data structure.
    - Initialize a list `heights` to store the height of each node, initialized with zeros.
    - Iterate over each node in the tree.
      - If the height of the current node is not zero, continue to the next node.
