@@ -7,12 +7,7 @@ This program simulates the processing of network packets received in a series. I
 The task is to simulate the processing of incoming network packets. Each packet has an arrival time and a processing time. Packets are processed in the order of their arrival (queue data structure). If the buffer is full when a packet arrives, it is dropped.
 
 ## Input Format
-
-- Size of the buffer (𝑆)
-- Number of incoming network packets (𝑛)
-- For each packet:
-  - Arrival time (𝐴𝑖)
-  - Processing time (𝑃𝑖)
+The first line of the input contains the size S of the buffer and the number n of incoming network packets. Each of the next n lines contains two numbers. i-th line contains the time of arrival Ai and the processing time Pi (both in milliseconds) of the i-th packet. It is guaranteed that the sequence of arrival times is non-decreasing (however, it can contain the exact same times of arrival in milliseconds — in this case the packet which is earlier in the input is considered to have arrived earlier).
 
 ## Output Format
 
