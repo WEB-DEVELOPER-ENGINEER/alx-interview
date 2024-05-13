@@ -24,3 +24,10 @@ Given a description of a rooted tree, the task is to compute the height of the t
 -1 0 4 0 3<br>
 - **Sample Output:**<br>
 4
+
+The input means that there are 5 nodes with numbers from 0 to 4, node 0 is a child of node 4, node 1 is the root, node 2 is a child of node 4, node 3 is a child of node 1, and node 4 is a child of node 1. To see this, let us write numbers of nodes from 0 to 4 in one line and the numbers given in the input in the second line underneath:
+
+0 1 2 3 4<br>  
+4 -1 4 1 1<br>
+
+Now we can see that the node number 1 is the root because −1 corresponds to it in the second line. Also, we know that nodes number 3 and number 4 are children of the root node 1. Also, we know that nodes number 0 and number 2 are children of node 4.
