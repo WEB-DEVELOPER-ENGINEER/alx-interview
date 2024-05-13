@@ -29,6 +29,8 @@ max
 
 **Output:**
 2
+
+2
 ### Sample 2.
 **Input:**
 10
