@@ -59,6 +59,7 @@ pop
 max
 
 **Output:**
+
 9
 
 9
