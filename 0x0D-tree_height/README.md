@@ -11,9 +11,14 @@ Given a description of a rooted tree, the task is to compute the height of the t
    - Read the parent nodes of each node.
 
 2. **Compute the height of the tree:**
-   - Start from the root node.
-   - Traverse the tree, keeping track of the depth of each node.
-   - Return the maximum depth encountered during the traversal.
+   - Implement a depth-first search (DFS) algorithm to traverse the tree.
+   - Initialize a list `heights` to store the height of each node, initialized with zeros.
+   - Iterate over each node in the tree.
+     - If the height of the current node is not zero, continue to the next node.
+     - If the parent of the current node is -1, it's the root node, set its height to 1.
+     - Otherwise, traverse upwards through the parent nodes until reaching a node whose height is already computed.
+     - Set the height of the current node to the height of its parent plus 1.
+   - Return the maximum height from the `heights` list.
 
 3. **Output the height of the tree.**
 
