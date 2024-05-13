@@ -5,6 +5,7 @@ The input consists of several queries. The first line of the input contains an i
 - `push v`: Push the value `v` onto the stack.
 - `pop`: Pop the top element from the stack.
 - `max`: Find and output the maximum value currently present in the stack.
+
 The goal is to ensure that all operations (Push, Pop, and Max) work in constant time.
 
 ## Output Format
