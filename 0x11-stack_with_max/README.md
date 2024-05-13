@@ -15,6 +15,7 @@ For each `max` query, output the maximum value of the stack on a separate line.
 
 ### Sample 1.
 **Input:**
+
 5
 
 push 2
@@ -34,6 +35,7 @@ max
 2
 ### Sample 2.
 **Input:**
+
 10
 
 push 2
@@ -56,7 +58,6 @@ pop
 
 max
 
-2
 **Output:**
 9
 
