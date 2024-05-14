@@ -10,7 +10,7 @@ Given a sequence 𝑎1, . . . , 𝑎𝑛 of integers and an integer 𝑚 ≤ �
 - The third line contains an integer 𝑚.
 
 **Output Format:** 
-Output max{𝑎𝑖, . . . , 𝑎𝑖+𝑚−1} for every 1 ≤ 𝑖 ≤ 𝑛 − 𝑚 + 1.
+max{𝑎𝑖, . . . , 𝑎𝑖+𝑚−1} for every 1 ≤ 𝑖 ≤ 𝑛 − 𝑚 + 1.
 
 ## Example
 **Input:**
