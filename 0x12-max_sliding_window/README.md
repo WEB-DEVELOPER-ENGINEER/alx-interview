@@ -9,7 +9,8 @@ Given a sequence 𝑎1, . . . , 𝑎𝑛 of integers and an integer 𝑚 ≤ �
 - The second line contains 𝑛 integers 𝑎1, . . . , 𝑎𝑛 separated by spaces.
 - The third line contains an integer 𝑚.
 
-**Output Format:** 
+**Output Format:**
+
 max{𝑎𝑖, . . . , 𝑎𝑖+𝑚−1} for every 1 ≤ 𝑖 ≤ 𝑛 − 𝑚 + 1.
 
 ## Example
