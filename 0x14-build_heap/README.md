@@ -37,3 +37,6 @@ Output: <br>
 1 3<br>
 ### Explaination:
 After swapping elements 4 in position 1 and 1 in position 4 the array becomes 5 1 3 2 4. After swapping elements 5 in position 0 and 1 in position 1 the array becomes 1 5 3 2 4. After swapping elements 5 in position 1 and 2 in position 3 the array becomes 1 2 3 5 4, which is already a heap, because 𝑎0 = 1 < 2 = 𝑎1, 𝑎0 = 1 < 3 = 𝑎2, 𝑎1 = 2 < 5 = 𝑎3, 𝑎1 = 2 < 4 = 𝑎4.
+
+## Visualization:
+[Building a Heap Visualization](https://www.cs.usfca.edu/~galles/visualization/Heap.html)
