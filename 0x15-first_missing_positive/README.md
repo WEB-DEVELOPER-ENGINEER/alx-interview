@@ -2,14 +2,12 @@
 
 ## Problem Description
 Given an unsorted integer array `nums`, find the smallest positive integer that is missing from the array.
-
 ### Constraints
 - **Time Complexity**: The algorithm must run in **O(n)** time.
 - **Space Complexity**: The algorithm must use **O(1)**
 - 1 <= nums.length <= 10^5
 - 2^31 <= nums[i] <= 2^31 - 1
-
-### Examples
+### Example
 Input: nums = [1, 2, 0] <br>
 Output: 3 <br>
 Explanation: The numbers in the range [1, 2] are all in the array.
