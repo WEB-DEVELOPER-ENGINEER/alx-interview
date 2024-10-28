@@ -13,7 +13,6 @@ Given an unsorted integer array `nums`, find the smallest positive integer that 
 ### Examples
 
 #### Example
-```plaintext
 Input: nums = [1, 2, 0]
 Output: 3
 Explanation: The numbers in the range [1, 2] are all in the array.
